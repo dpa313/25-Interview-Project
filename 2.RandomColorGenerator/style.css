@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+    font-size: 20px;
+}
+.color-container{
+    display: flex;
+    gap: 20px;
+}
+.hex-color-container, .rgb-color-container{
+    min-height: 100vh;
+    flex: 1;
+}
+.hex-color-container button{
+    color: #7fff00;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: 1px solid gainsboro;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(0, 89, 255);
+}
+.hex-color-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #7fff00;
+}
+.hex-color-value{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+.rgb-color-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+}

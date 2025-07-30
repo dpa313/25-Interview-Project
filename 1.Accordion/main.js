@@ -48,7 +48,7 @@ function createAccordionData() {
 createAccordionData();
 
 
-// 
+// ACCORDION BEHAVIOUR
 const getAccordionTitles = document.querySelectorAll('.accordion-title')
 
 getAccordionTitles.forEach(currentItem =>{
@@ -56,10 +56,12 @@ getAccordionTitles.forEach(currentItem =>{
     if(currentItem.classList.contains('active')){
       currentItem.classList.remove('active')
     }else{
+      // THIS SHOWS IF ONE ITEM IS CLICKED OTHER ITEM WILL AUTOMATICALLY HIDE
       let getAlreadyAddedActiveClass = document.querySelectorAll('.active');
       getAlreadyAddedActiveClass.forEach(currentActiveItem=>{
         currentActiveItem.classList.remove('active')
       })
+      // =====================================================================
       currentItem.classList.add('active')
     }
   })
