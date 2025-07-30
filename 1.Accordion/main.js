@@ -56,9 +56,9 @@ getAccordionTitles.forEach(currentItem =>{
     if(currentItem.classList.contains('active')){
       currentItem.classList.remove('active')
     }else{
-      let getAlreadyAddedActiveClass = document.querySelectorAll('.active')
+      let getAlreadyAddedActiveClass = document.querySelectorAll('.active');
       getAlreadyAddedActiveClass.forEach(currentActiveItem=>{
-        currentActiveItem.remove('active')
+        currentActiveItem.classList.remove('active')
       })
       currentItem.classList.add('active')
     }
