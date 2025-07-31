@@ -32,7 +32,7 @@ body{
     justify-content: center;
     background-color: #7fff00;
 }
-.hex-color-value{
+.hex-color-value, .rgb-color-value{
     font-size: 30px;
     font-weight: bold;
     color: #000;
@@ -42,5 +42,14 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: yellow;
+    background-color: rgb(255, 255, 0);
+}
+.rgb-color-container button{
+    color: #7fff00;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: 1px solid gainsboro;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(255, 0, 106);
 }
